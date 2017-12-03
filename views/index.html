@@ -9,7 +9,7 @@
         <div id = "parent">
             <div id = "child">
                     <header>Welcome To Movie Database</header>    
-                    <form action = "/entered">
+                    <form action = "/movie-entry" method="POST">
                         <div id = "form">
                             <div id = "form-text">
                                     <h2>Title :</h2>
@@ -17,16 +17,14 @@
                                     <h2>IMDB Rating :</h2>
                             </div>
                             <div id = "form-input">
-                                <div><input class = "inputField" type="text" name = "title" placeholder = "Enter Movie" required /></div>
-                                <div><input class = "inputField" type = "text" name = "year" placeholder = "Enter Year of release" required /></div>
-                                <div><input class = "inputField" type = "text" name = "imdb" placeholder = "IMDB-rating" required /></div>
+                                <div><input class = "inputField" type="text" name = "title" placeholder = "Enter Movie" onsubmit="this.value=''" required /></div>
+                                <div><input class = "inputField" type = "text" name = "year" placeholder = "Enter Year of release" onsubmit="this.value=''" required /></div>
+                                <div><input class = "inputField" type = "text" name = "imdb" placeholder = "IMDB-rating" onsubmit="this.value=''" required /></div>
                             </div>
                         </div>
                         <input type="submit" value = "Submit" id = "submit"/>
                     </form>
             </div>
         </div>
-        
-        
     </body>
 </html>

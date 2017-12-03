@@ -77,3 +77,11 @@ header{
     letter-spacing: 0.5px;
     font-family: "Lato", sans-serif;
 }
+
+/* Status Page */
+
+#statusPage{
+    font-family: "Lato", sans-serif;
+    font-size : 20px;
+    margin : 0 auto;
+}
